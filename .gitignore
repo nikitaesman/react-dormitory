@@ -1,0 +1,6 @@
+.idea
+#server
+server/node_modules
+#client
+client/build
+client/node_modules

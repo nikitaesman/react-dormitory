@@ -1,0 +1,21 @@
+.btn {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    background: #FB4824;
+    padding: 15px 12px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    background: #ff5e2d;
+}

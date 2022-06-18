@@ -1,0 +1,10 @@
+{
+  "PORT": "5000",
+  "DB": {
+    "host": "localhost",
+    "user": "root",
+    "password": "",
+    "database":"dormitory"
+  },
+  "jwtSecret": "Hello i am secret"
+}

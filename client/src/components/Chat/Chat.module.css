@@ -1,0 +1,105 @@
+.Chat {
+    display: flex;
+    flex-direction: column;
+    width: 610px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    margin-left: 30px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.chat {
+    display: flex;
+    flex-direction: column;
+}
+
+.messagesBox {
+    display: flex;
+    height: 330px;
+    flex-direction: column;
+    padding: 10px;
+    background: #F4F4F5;
+    border-radius: 15px 15px 0 0;
+}
+
+
+.messageCompanion {
+    position: relative;
+    display: block;
+    max-width: 90%;
+    font-size: 13px;
+    color: #FFF;
+    background: #F7412F;
+    padding: 7px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.messageCompanion:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -18px;
+    display: block;
+    border-top: 12px solid transparent;
+    border-left: 12px solid transparent;
+    border-right: 12px solid #F7412F;
+    width: 1px;
+    height: 1px;
+}
+
+.messageSelf {
+    position: relative;
+    display: block;
+    max-width: 90%;
+    font-size: 13px;
+    color: #FFF;
+    background: #751FF6;
+    padding: 7px;
+    border-radius: 10px;
+    margin-top: 15px;
+    align-self: flex-end;
+}
+
+.messageSelf:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -18px;
+    display: block;
+    border-top: 12px solid transparent;
+    border-left: 12px solid #7427F2;
+    border-right: 12px solid transparent;
+    width: 1px;
+    height: 1px;
+}
+
+.sendFrom {
+    display: flex;
+}
+
+.sendInput {
+    display: block;
+    padding: 10px;
+    width: 80%;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10px 0 0 10px;
+    border: 2px solid #F7412F;
+    outline: none;
+}
+
+.sendButton {
+    display: block;
+    width: 20%;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    background: #F7412F;
+    cursor: pointer;
+}

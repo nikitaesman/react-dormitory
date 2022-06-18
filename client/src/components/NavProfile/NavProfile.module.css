@@ -1,0 +1,82 @@
+.mail {
+    display: block;
+    color: rgba(42, 42, 44, 0.6);
+    transition: all 0.2s ease;
+}
+
+.mail:hover {
+    color: black;
+}
+
+.profile {
+    position: relative;
+    display: flex;
+    min-width: 200px;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 26px 10px;
+    border-left: 2px solid #F4F4F5;
+    border-right: 2px solid #F4F4F5;
+    transition: all 0.5s ease;
+}
+
+.profile:hover {
+    background: #F4F4F5;
+}
+
+.profile:hover .profile__arrow {
+    transform: rotateX(180deg);
+}
+
+.profile:hover .nav {
+    height: min-content;
+}
+
+.profile__img {
+    display: block;
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
+}
+
+.profile__name {
+    margin-right: 10px;
+}
+
+.profile__arrow {
+    width: 24px;
+    transition: all 0.5s ease;
+}
+
+.nav {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    z-index: 100;
+    top: 78px;
+    left: 0;
+    background: #fff;
+    box-shadow: 3px 3px 10px rgb(0 0 0 / 40%);
+    border-radius: 0 0 10px 10px;
+    transition: all 0.3s ease;
+}
+
+.link {
+    display: block;
+    color: #2C2627;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-top: 1px solid #F4F4F5;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.link:hover {
+    background: #F4F4F5;
+}

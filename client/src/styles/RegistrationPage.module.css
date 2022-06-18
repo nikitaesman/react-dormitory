@@ -1,0 +1,120 @@
+.RegistrationTitle {
+    text-align: center;
+    font-size: 28px;
+}
+
+.RegistrationContent {
+    padding: 30px;
+    background: #fff;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-around;
+}
+
+.wrapTitle {
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    width: 320px;
+    flex-direction: column;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-sizing: content-box;
+}
+
+.roomSelect {
+    display: flex;
+    width: 500px;
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+.floorBox {
+    position: relative;
+    display: flex;
+    border: 2px solid #F7412F;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 30px 30px 30px 100px;
+    flex-wrap: wrap;
+}
+
+.floorTitle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100%;
+}
+
+.room {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50px;
+    height: 50px;
+    background: #F4F4F4;
+    border: 2px solid #F7412F;
+    border-radius: 5px;
+    padding: 4px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.room:hover {
+    border: 2px solid #751FF6;
+}
+
+.roomActive {
+    transform: scale(1.2);
+    border: 2px solid #751FF6;
+}
+
+.roomNumber {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+    pointer-events: none;
+}
+
+.roomOcup {
+    text-align: center;
+    margin-top: 4px;
+    font-size: 9px;
+    line-height: 5px;
+}
+
+.roomPlaces {
+    text-align: center;
+    font-size: 11px;
+    pointer-events: none;
+}
+
+.modalBox {
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    padding: 20px;
+}
+
+.modalLabel {
+    font-size: 25px;
+    color: #F7412F;
+    margin-top: 40px;
+}
+
+.modalText {
+    margin-top: 10px;
+    font-size: 35px;
+}

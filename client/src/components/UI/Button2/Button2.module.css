@@ -1,0 +1,19 @@
+.btn {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 13px;
+    border: 1px solid #797e8b;
+    background: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #F4F4F5;
+}

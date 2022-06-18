@@ -1,0 +1,17 @@
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    margin-top: 65px;
+    height: min-content;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 10px;
+}

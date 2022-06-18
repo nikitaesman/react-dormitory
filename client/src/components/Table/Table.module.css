@@ -1,0 +1,65 @@
+
+.Table {
+    display: block;
+    width: 100%;
+    max-height: 450px;
+    overflow: auto;
+    table-layout: auto;
+    border-spacing: unset;
+}
+
+.displayNone {
+    display: none;
+}
+
+.caption {
+    display: none;
+}
+
+.header {
+    border: none;
+    background: #a267fd;
+    border-right: 1px solid #000000;
+    cursor: pointer;
+}
+
+.header p{
+    resize: horizontal;
+    padding: 10px;
+    min-width: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.headerSlider {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 4px;
+    height: 4px;
+    background: red;
+}
+
+
+.cell {
+    border: none;
+    text-align: center;
+    border-right: 1px solid #000;
+    border-top: 1px solid #000;
+}
+
+.cellInput {
+    display: block!important;
+    width: 100%;
+    padding: 7px;
+    border: none;
+}
+
+.cellInput:disabled {
+    background: #CDFFFF;
+}
+
+.cellInputChanged {
+    background: #F36663;
+}

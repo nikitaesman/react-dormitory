@@ -1,0 +1,30 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    width: 400px;
+    margin: 100px auto;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.title {
+    width: 100%;
+    text-align: left;
+}
+
+.addText {
+    display: flex;
+    margin-left: auto;
+    text-align: right;
+    color: rgb(16 24 40 / 60%);
+    font-size: 13px;
+    margin-top: 20px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.addText:hover {
+    color: rgb(16 24 40 / 100%);
+}
