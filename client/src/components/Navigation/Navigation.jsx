@@ -20,7 +20,7 @@ const Navigation = () => {
                 setLocationName("Панель управления")
                 break
             case "/login":
-                setLocationName("Аунтефикация")
+                setLocationName("Авторизация")
                 break
             case "/registration":
                 setLocationName("Заселение")
