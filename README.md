@@ -15,11 +15,12 @@ Technology stack:
 <span style="background: #DF472F; padding: 3px;">HTML</span>, 
 <span style="background: #2A4ED9; padding: 3px;">CSS</span>, 
 <span style="background: #bdae5f; padding: 3px; ">JS</span>, 
-<span style="background: #67D4F1; padding: 3px;">REACT.js</span>, 
+<span style="background: #67D4F1; padding: 3px;">REACT</span>, 
+<span style="background: #7B42BB; padding: 3px;">REDUX</span>, 
 <span style="background: #428641; padding: 3px;">NODE.js</span>, 
 <span style="background: #B8705A; padding: 3px;">MariaDb</span>,
 <span style="background: #2F3C48; padding: 3px;">Express</span>,
-<span style="background: #4178C0; padding: 3px;">Sequelize Server</span>
+<span style="background: #4178C0; padding: 3px;">Sequelize</span>
 </h3>
 
 

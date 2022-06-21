@@ -126,6 +126,12 @@ router.post('/registration', auth, role, async (req, res) => {
         const login = str_rand(7)
         const password = str_rand(7)
 
+        const [checkUserLike] = await sequelize.query(`SELECT id FROM students WHERE login = '${login}'`)
+
+        if (checkUserLike[0] !== undefined) {
+            throw new Error('Сгенерированный логин равен уже имеющимуся у другово пользователя')
+        }
+
         let [roomData] = await sequelize.query(`SELECT * FROM rooms WHERE num = '${roomNum}' AND seats_occupied < num_seats`  )
 
         if (!roomData) {
@@ -201,6 +207,18 @@ router.post('/change-login', auth, async (req, res) => {
 
         if(user[0].login !== oldLogin) {
             return res.status(400).json({type: "ERROR", message: "Старый логин введён неверно"})
+        }
+
+        const [checkLoginLike] = await sequelize.query(`SELECT id FROM students WHERE login = '${newLogin}'`)
+
+        if (checkLoginLike[0] !== undefined) {
+            return res.status(400).json({type: "ERROR", message: "Этот логин уже использует другой пользователь"})
+        }
+
+        const [checkLoginLike2] = await sequelize.query(`SELECT id FROM personal WHERE login = '${newLogin}'`)
+
+        if (checkLoginLike2[0] !== undefined) {
+            return res.status(400).json({type: "ERROR", message: "Этот логин уже использует другой пользователь"})
         }
 
         const [loginUpdate] = await sequelize.query(`UPDATE students SET login = '${newLogin}' WHERE id = '${req.user.userId}'`)
